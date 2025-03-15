@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+header {
+    background-color: #2a2a2a;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header .logo p {
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    color: #f5a623;
+}
+
+.hero {
+    background: url('your-image.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align:center;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #f5a623;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.services {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.service-item {
+    margin: 30px 0;
+}
+
+.service-item h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.about {
+    background-color: #f1f1f1;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact form button {
+    padding: 15px 30px;
+    background-color: #f5a623;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #2a2a2a;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 2.5rem; /* უფრო პატარა ზომა */
+    }
+
+    .hero p {
+        font-size: 1.2rem; /* პატარა ზომა */
+    }
+
+    .btn-primary {
+        padding: 8px 16px; /* უფრო მცირე ზომის ღილაკი */
+    }
+
+    nav ul {
+        flex-direction: column; /* Vertical alignment for mobile */
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .contact form input, .contact form textarea {
+        width: 90%; /* Increase width for mobile */
+        padding: 12px;
+    }
+
+    footer {
+        font-size: 0.9rem; /* Make footer text smaller for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo h1 {
+        font-size: 2em; /* Smaller font size for logo */
+    }
+
+    .hero h2 {
+        font-size: 1.8rem; /* Smaller font size */
+    }
+
+    .hero p {
+        font-size: 1rem; /* Smaller text for mobile */
+    }
+
+    .contact form input, .contact form textarea {
+        padding: 12px;
+        font-size: 1rem; /* Adjust font size for inputs on smaller screens */
+    }
+}
